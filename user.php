@@ -74,12 +74,14 @@ if ($_POST) {
 					<div class="col-12">
 						<form class="form-group" method="post" >
 							<input type="text" class="form-control form-name" placeholder="Nombre" name="name" id="name">
-							<?php echo "Aca van los errores de nombre"; ?>
+							<?php echo (($FormData->fieldHasError('name') ? $FormData->getFieldErrors('name') : '')); ?>
+
+
 							<input type="text" class="form-control form-email" placeholder="Email" name="email" id="email">
-							<?php echo "Aca van los errores de nombre"; ?>
+							<?php echo (($FormData->fieldHasError('email') ? $FormData->getFieldErrors('email') : '')); ?>
 							<input type="password" class="form-control form-password" placeholder="Contraseña" name="password" id=
 							"password">
-							<?php echo "Aca van los errores de nombre"; ?>
+							<?php echo "Aca van los errores de contraseña"; ?>
 							<input type="password" class="form-control form-password" placeholder="Confirme su contraseña" name="repassword" id=
 							"repassword">
 							<div class="aclaracion">
@@ -88,7 +90,7 @@ if ($_POST) {
 							</div>
 							<label for="FormFileAvatar" class="mt-3">Subir una foto de perfil:</label>
 							<input type="file" class="form-control-file" id="FormFileAvatar" name="avatar" id="avatar">
-							<?php echo "Aca van los errores de nombre"; ?>
+							<?php echo "Aca van los errores de foto"; ?>
 							<button type="submit" class="btn btn-info btn-block">Crear Cuenta</button>
 						</form>
 					</div>
