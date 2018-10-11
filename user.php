@@ -1,3 +1,28 @@
+<?php
+require_once "clases/ValidatorRegisterForm.php";
+
+if ($_POST) {
+	$FormData = new ValidatorRegisterForm($_POST,$_FILES);
+	echo "<br>";
+	echo "<br>";
+	echo "<br>";
+	echo "<br>";
+	echo "<br>";
+	echo "<br>";
+	echo "<pre>";
+	var_dump($_POST);
+	echo "</pre>";
+	var_dump($FormData->esValido());
+	echo "<br>";
+	$errores = $FormData->getAllErrors();
+	// echo var_dump($FormData->getAllErrors());
+	foreach ($errores as $error) {
+		echo $error;
+		echo "<br>";
+	}
+}
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,15 +39,9 @@
 	<?php // require_once ("autoload.php") ?>
 
 
-	
-	<?php require_once("header.php") ?>
-	<?php require_once ("errores.php") ?>
-	<?php if ($_POST) {
-		echo "Hay aglo enviado";
-		$FormData = new ValidatorRegisterForm($_POST,$_FILES);
-		echo 'resultado :'.$FormData->esValido().'ok';
-	} else {
-		echo "No Hay"; }?>
+
+	<?php require_once ("header.php") ?>
+
 
 	<div class="container signjoin">
 		<div class="row">
@@ -39,13 +58,13 @@
 							"password">
 							<div class="form-check d-flex">
 								<label for="persiste">Mantenerme conectado</label>
-								<input type="checkbox" name="persiste" id="persiste" class="form-check-input">	
+								<input type="checkbox" name="persiste" id="persiste" class="form-check-input">
 							</div>
 							<button type="submit" class="btn btn-info btn-block">Ingresar</button>
 						</form>
 					</div>
 				</div>
-				
+
 			</div>
 			<div class="col-12 col-md-6">
 				<div class="row registrarse">
@@ -54,11 +73,14 @@
 					</div>
 					<div class="col-12">
 						<form class="form-group" method="post" >
-							<input type="text" class="form-control form-nombre" placeholder="Nombre" name="nombre" id="nombre">
+							<input type="text" class="form-control form-name" placeholder="Nombre" name="name" id="name">
+							<?php echo "Aca van los errores de nombre"; ?>
 							<input type="text" class="form-control form-email" placeholder="Email" name="email" id="email">
+							<?php echo "Aca van los errores de nombre"; ?>
 							<input type="password" class="form-control form-password" placeholder="Contraseña" name="password" id=
 							"password">
-							<input type="repassword" class="form-control form-password" placeholder="Confirme su contraseña" name="repassword" id=
+							<?php echo "Aca van los errores de nombre"; ?>
+							<input type="password" class="form-control form-password" placeholder="Confirme su contraseña" name="repassword" id=
 							"repassword">
 							<div class="aclaracion">
 								<i class="fas fa-info-circle"></i>
@@ -66,12 +88,11 @@
 							</div>
 							<label for="FormFileAvatar" class="mt-3">Subir una foto de perfil:</label>
 							<input type="file" class="form-control-file" id="FormFileAvatar" name="avatar" id="avatar">
-							
-							<button type="submit" class="btn btn-info btn-block"" >Crear Cuenta</button>
+							<?php echo "Aca van los errores de nombre"; ?>
+							<button type="submit" class="btn btn-info btn-block">Crear Cuenta</button>
 						</form>
 					</div>
 				</div>
-			
 			</div>
 		</div>
 	</div>
