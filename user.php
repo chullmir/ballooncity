@@ -1,8 +1,8 @@
 <?php
 require_once "clases/ValidatorRegisterForm.php";
-
+$FormData = new ValidatorRegisterForm($_POST,$_FILES);
 if ($_POST) {
-	$FormData = new ValidatorRegisterForm($_POST,$_FILES);
+
 	echo "<br>";
 	echo "<br>";
 	echo "<br>";
@@ -73,7 +73,7 @@ if ($_POST) {
 					</div>
 					<div class="col-12">
 						<form class="form-group" method="post" >
-							<input type="text" class="form-control form-name" placeholder="Nombre" name="name" id="name">
+							<input type="text" class="form-control form-name" placeholder="Nombre" name="name" id="name" value="<?= $ ?> ">
 							<?php echo (($FormData->fieldHasError('name') ? $FormData->getFieldErrors('name') : '')); ?>
 
 
