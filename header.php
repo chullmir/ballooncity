@@ -32,16 +32,16 @@
 			<ul class="navbar-nav mr-auto">
 
 				<li class="nav-item">
-					<a class="nav-link" href="#">Envíos</a>
+					<a class="nav-link link-envios" href="#">Envíos</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Mayorista</a>
+					<a class="nav-link link-mayorista" href="#">Mayorista</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Franquicias</a>
+					<a class="nav-link link-franquicias" href="#">Franquicias</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" href="faq.php">FAQ</a>
+					<a class="nav-link link-faq" href="faq.php">FAQ</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Globos Publicitarios</a>
@@ -49,8 +49,6 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#">Eventos</a>
 				</li>
-
-
 			</ul>
 			<form class="form-inline my-2 my-lg-0 ">
 				<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
