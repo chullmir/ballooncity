@@ -1,3 +1,4 @@
+
 <?php
 require_once "clases/ValidatorRegisterForm.php";
 $FormData = new ValidatorRegisterForm($_POST,$_FILES);

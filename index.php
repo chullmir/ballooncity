@@ -1,28 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-	<?php require_once("header.php") ?>
-	
+<?php $pageTitle = 'Balloon City' ?>
 
-	
+<?php require_once("partials/head.php") ?>
+
+	<?php require_once("partials/header.php") ?>
+
+
+
 	<div class="container-fluid container-main-body">
 		<div class="row d-flex flex-row-reverse">
-			
-		
+
+
 
 
 			<div class="col-md-9 body-store">
-				
+
 				<div class="banner d-none d-md-block">
-					
+
 					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -246,7 +239,7 @@
 								<a href="#" class="btn btn-primary">Comprar</a>
 							</div>
 						</div>
-					
+
 					</div>
 				</div>
 
@@ -270,7 +263,7 @@
 				<div class="newsletter">
 					<div class="row">
 						<div class="col-sm-12 col-md d-flex align-items-center">
-							
+
 							<div class="imagen mr-3">
 								<img class="" src="img/newsletter.png" alt="">
 							</div>
@@ -288,8 +281,8 @@
 								<button class="btn btn-primary btn-block">Suscribirse</button>
 							</div>
 						</div>
-						
-					
+
+
 					</div>
 				</div>
 
@@ -297,7 +290,7 @@
 			</div>
 
 			<div class="col col-md-3 aside">
-				
+
 				<div class="list-categorias">
 					<a href="#" class="list-group-item">Cumpleaños</a>
 					<a href="#" class="list-group-item">Amor</a>
@@ -308,7 +301,7 @@
 					<a href="#" class="list-group-item">Festejos</a>
 					<a href="#" class="list-group-item">Mensajes</a>
 					<a href="#" class="list-group-item">Decoracion</a>
-					
+
 				</div>
 
 
@@ -316,10 +309,10 @@
 			</div>
 
 		</div>
-		
-	</div>	
 
-	<?php require_once("footer.php") ?>
+	</div>
+
+	<?php require_once("partials/footer.php") ?>
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

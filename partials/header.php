@@ -20,10 +20,9 @@
 			</div>
 		</div>
 	</div>
-
 	<nav class="navbar navbar-expand-lg navbar-dark">
 		<a class="navbar-brand" href="index.php">
-			<img src="img/logo.png" width="70px" alt=""">
+			<img src="img/logo.png" width="70px" alt="">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -32,22 +31,22 @@
 			<ul class="navbar-nav mr-auto">
 
 				<li class="nav-item">
-					<a class="nav-link link-envios" href="#">Envíos</a>
+					<a class="nav-link <?php echo($navActive == 'nav-envio' ? 'active' : '' ) ?>" href="#">Envíos</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link link-mayorista" href="#">Mayorista</a>
+					<a class="nav-link <?php echo($navActive == 'nav-mayorista' ? 'active' : '' ) ?>" href="#">Mayorista</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link link-franquicias" href="#">Franquicias</a>
+					<a class="nav-link <?php echo($navActive == 'nav-franquicia' ? 'active' : '' ) ?>" href="#">Franquicias</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link link-faq" href="faq.php">FAQ</a>
+					<a class="nav-link <?php echo($navActive == 'nav-faq' ? 'active' : '') ?>" href="faq.php">FAQ</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Globos Publicitarios</a>
+					<a class="nav-link <?php echo($navActive == 'nav-globos-publicitarios' ? 'active' : '' ) ?>" href="#">Globos Publicitarios</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Eventos</a>
+					<a class="nav-link <?php echo($navActive == 'nav-evento' ? 'active' : '' ) ?>" href="#">Eventos</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0 ">
