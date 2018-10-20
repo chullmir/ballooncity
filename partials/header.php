@@ -7,13 +7,20 @@
 						<a href="index.php"><i class="fas fa-home"></i></a>
 					</div>
 					<div class="menu">
-						<a href="#"><i class="fas fa-envelope"></i></a>
+						<a href="contacto.php"><i class="fas fa-envelope"></i></a>
 					</div>
 					<div class="ml-auto menu">
-						<div class="no-sign">
-							<a href="user.php"><i class="fas fa-user-circle"></i>
-							Sign In</a>
-						</div>
+						<?php if ($auth->isLogged()): ?>
+							<div class="no-sign">
+								<a href="profile.php"><i class="fas fa-user-circle"></i>
+								Mi Perfil</a>
+							</div>
+						<?php else: ?>
+							<div class="no-sign">
+								<a href="signin.php"><i class="fas fa-sign-in-alt"></i>
+								Sign In</a>
+							</div>
+						<?php endif ?>
 
 					</div>
 				</div>
@@ -31,22 +38,22 @@
 			<ul class="navbar-nav mr-auto">
 
 				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-envio' ? 'active' : '' ) ?>" href="#">Envíos</a>
+					<a class="nav-link <?php echo($navActive == 'nav-envios' ? 'active' : '' ) ?>" href="envios.php">Envíos</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-mayorista' ? 'active' : '' ) ?>" href="#">Mayorista</a>
+					<a class="nav-link <?php echo($navActive == 'nav-mayorista' ? 'active' : '' ) ?>" href="mayorista.php">Mayorista</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-franquicia' ? 'active' : '' ) ?>" href="#">Franquicias</a>
+					<a class="nav-link <?php echo($navActive == 'nav-franquicia' ? 'active' : '' ) ?>" href="franquicias.php">Franquicias</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link <?php echo($navActive == 'nav-faq' ? 'active' : '') ?>" href="faq.php">FAQ</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-globos-publicitarios' ? 'active' : '' ) ?>" href="#">Globos Publicitarios</a>
+					<a class="nav-link <?php echo($navActive == 'nav-globos-publicitarios' ? 'active' : '' ) ?>" href="publicitarios.php">Globos Publicitarios</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-evento' ? 'active' : '' ) ?>" href="#">Eventos</a>
+					<a class="nav-link <?php echo($navActive == 'nav-evento' ? 'active' : '' ) ?>" href="eventos.php">Eventos</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0 ">

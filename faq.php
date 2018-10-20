@@ -1,8 +1,10 @@
-
-<?php $pageTitle = 'Preguntas Frequentes' ?>
-<?php $navActive = 'nav-faq' ?>
-<?php require_once("partials/head.php") ?>
-<?php require_once("partials/header.php") ?>
+<?php 
+require_once 'autoload.php';
+$pageTitle = 'Preguntas Frequentes';
+$navActive = 'nav-faq';
+require_once 'partials/head.php';
+require_once 'partials/header.php';
+?>
 
 	<div class="container faq">
 		<h5>Area de entrega</h5>

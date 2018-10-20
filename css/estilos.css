@@ -283,6 +283,7 @@ footer .legales p{
 /*------------ SIGN IN / LOG IN ------------*/
 
 .signjoin{
+	padding-top: 45px;
 	padding-bottom: 45px;
 }
 .signjoin .ingresar{
@@ -295,6 +296,9 @@ footer .legales p{
 	margin-top: 15px;
 }
 .signjoin .form-password{
+	margin-top: 15px;
+}
+.signjoin .form-repassword{
 	margin-top: 15px;
 }
 .signjoin .form-check{

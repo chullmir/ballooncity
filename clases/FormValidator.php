@@ -13,14 +13,9 @@
       public function getAllErrors(){
         return $this->errors;
       }
-      public function cargarError($campo,$texto){
+      public function addError($campo,$texto){
   			$this->errors[$campo]=$texto;
   		}
-      
-      // NO ENTIENDO POR QUE ESTO:
-      // public abstract function isValid();
-
+      public abstract function isValid();
   }
-
-
- ?>
+?>
