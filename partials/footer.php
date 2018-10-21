@@ -2,15 +2,15 @@
 	<div class="container">
 		<div class="row contacto">
 			<div class="col-12 col-md-4 columnas locales">
-				<a href=""><div class="icono d-flex justify-content-center"><i class="fas fa-map-marked-alt"></i></div></a>
+				<a href="puntos-venta.php"><div class="icono d-flex justify-content-center"><i class="fas fa-map-marked-alt"></i></div></a>
 				<h4 class="d-flex justify-content-center">Locales</h4>
 			</div>
 			<div class="col-12 col-md-4 columnas envios">
-				<a href=""><div class="icono d-flex justify-content-center"><i class="fas fa-truck"></i></div></a>
+				<a href="envios.php"><div class="icono d-flex justify-content-center"><i class="fas fa-truck"></i></div></a>
 				<h4 class="d-flex justify-content-center">Envíos</h4>
 			</div>
 			<div class="col-12 col-md-4 columnas contacto">
-				<a href=""><div class="icono d-flex justify-content-center"><i class="fas fa-phone"></i></div></a>
+				<a href="contacto.php"><div class="icono d-flex justify-content-center"><i class="fas fa-phone"></i></div></a>
 				<h4 class="d-flex justify-content-center">Contacto</h4>
 			</div>
 		</div>

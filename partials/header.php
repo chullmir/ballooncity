@@ -67,7 +67,7 @@
 	<div class="container-fluid container-venta">
 		<div class="row">
 			<div class="col d-flex justify-content-center">
-				<a href="#"><i class="fas fa-store-alt"></i> Puntos de Venta</a>
+				<a href="puntos-venta.php"><i class="fas fa-store-alt"></i> Puntos de Venta</a>
 			</div>
 		</div>
 	</div>
