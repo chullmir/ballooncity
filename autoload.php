@@ -3,9 +3,6 @@ require_once 'config.php';
 // Clases
 require_once 'clases/RegisterForm.php';
 require_once 'clases/LoginForm.php';
-
-require_once 'clases/RegisterFormValidator.php';
-require_once 'clases/LoginFormValidator.php';
 require_once 'clases/Auth.php';
 require_once 'clases/DBJson.php';
 require_once 'clases/SaveImage.php';
