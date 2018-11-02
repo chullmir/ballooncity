@@ -38,14 +38,6 @@ nav .navbar-collapse .navbar-nav .nav-item{
 nav .navbar-collapse .navbar-nav .nav-item:hover{
 	color: #fff;
 }
-
-/* Menús activos según la página */
-.page-envios .nav-link.link-envios { color: white; }
-.page-mayorista .nav-link.link-mayorista { color: white; }
-.page-franquicias .nav-link.link-franquicias { color: white; }
-
-
-
 .container-venta{
 	background: #10BBD5;
 	padding-top: 10px;
@@ -132,6 +124,23 @@ nav .btn-outline-secondary:hover{
 	width: 100%;
 }
 
+ /*------------- ENVIOS ------------- */
+ .envios{
+ 	margin-top: 35px;
+ 	text-align: center;
+ }
+ .envios h5{
+ 	font-weight: bold;
+ }
+ .envios img{
+ 	width: 50%;
+ 	margin-bottom: 30px;
+ }
+ .envios i{
+ 	color: #377FD9;
+ 	font-size: 30px;
+ 	margin-bottom: 20px;
+ }
 
  /*------------- BODY ------------- */
 

@@ -17,7 +17,7 @@
 							</div>
 						<?php else: ?>
 							<div class="no-sign">
-								<a href="signin.php"><i class="fas fa-sign-in-alt"></i>
+								<a href="login.php"><i class="fas fa-sign-in-alt"></i>
 								Sign In</a>
 							</div>
 						<?php endif ?>

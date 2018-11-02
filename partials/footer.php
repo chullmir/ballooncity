@@ -34,7 +34,7 @@
 				<div class="img-redes">
 					<a href="#"><i class="fab fa-youtube"></i></a>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>
@@ -50,5 +50,5 @@
 				<p>(C) Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 		</div>
-	</div>	
-</footer>	
+	</div>
+</footer>
