@@ -192,7 +192,11 @@ nav .btn-outline-secondary:hover{
 .publicitarios .contacto{
 	margin-bottom: 35px;
 }
-
+/*------------- PROFILE ------------- */
+.profile{
+	text-align: center;
+	margin-bottom: 40px;
+}
  /*------------- BODY ------------- */
 
  .titulo-pagina{
@@ -361,6 +365,9 @@ footer .legales p{
 }
 .signjoin .ingresar small a{
 	color: black;
+}
+.signjoin .form-lastname{
+	margin-top: 15px;
 }
 .signjoin .form-email{
 	margin-top: 15px;

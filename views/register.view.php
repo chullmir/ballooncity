@@ -24,6 +24,20 @@ require_once 'partials/header.php';
             </p>
           </div>
         <?php endif; ?>
+        <input
+        type="text"
+        name="lastname"
+        class="form-control form-lastname <?= ($FormData->fieldHasError('lastname') ? 'is-invalid' : ''); ?>"
+        placeholder="Apellido*"
+        id="lastname"
+        value="<?php echo($FormData->getLastName()); ?>">
+        <?php if ($FormData->fieldHasError('lastname')): ?>
+          <div class="error">
+            <p>
+              <?= $FormData->getFieldErrors('lastname') ?>
+            </p>
+          </div>
+        <?php endif; ?>
  				<input
  				type="text"
  				name="email"

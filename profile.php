@@ -1,11 +1,16 @@
 <?php
 require_once 'autoload.php';
+require_once 'clases/conexion.php';
 $pageTitle = 'Mi Perfil';
 require_once 'partials/head.php';
 require_once 'partials/header.php';
 ?>
 <body>
-	<a href="logout.php">Cerrar Sesión</a>
+	<div class="container profile">
+		<h3 class="titulo-pagina">Bienvenido <?= ucfirst($_SESSION['name']) ?></h3>
+		<a href="logout.php">Cerrar Sesión</a>
+	</div>
+	
 </body>
 
 

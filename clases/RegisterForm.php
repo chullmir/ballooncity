@@ -2,6 +2,7 @@
 require_once 'FormClass.php';
 class RegisterForm extends FormClass{
   private $name;
+  private $lastname;
   private $email;
   private $password;
   private $repassword;
@@ -10,6 +11,7 @@ class RegisterForm extends FormClass{
 
   function __construct($post){
     $this->name = filter_var(strtolower((isset($post['name']) ? $post['name'] : '')),FILTER_SANITIZE_STRING);
+    $this->lastname = filter_var(strtolower((isset($post['lastname']) ? $post['lastname'] : '')),FILTER_SANITIZE_STRING);
     $this->email = filter_var(strtolower((isset($post['email']) ? $post['email'] : '')),FILTER_SANITIZE_STRING);
     $this->email = (isset($post['email']) ? $post['email'] : '');
     $this->password = (isset($post['password']) ? $post['password'] : '');
@@ -42,6 +44,9 @@ class RegisterForm extends FormClass{
     if (empty($this->name)) {
       $this->addError('name','Por favor escribir el nombre');
     }
+    if (empty($this->lastname)) {
+      $this->addError('lastname','Por favor escribir el apellido');
+    }
     if (empty($this->email)) {
       $this->addError('email','Por favor escribir un email');
     } elseif (!filter_var($this->email,FILTER_VALIDATE_EMAIL)) {
@@ -61,6 +66,9 @@ class RegisterForm extends FormClass{
 
   // Getters
   public function getName(){
+    return $this->name;
+  }
+  public function getLastName(){
     return $this->name;
   }
   public function getEmail(){
