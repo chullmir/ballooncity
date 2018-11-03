@@ -108,13 +108,13 @@ nav .btn-outline-secondary:hover{
 	padding-bottom: 15px;
 }
 .aside .list-categorias{
-	
+
 }
 .aside .list-categorias a{
 	/*font-weight: bold;*/
 }
 .aside .list-categorias a:hover{
-	
+
 }
 .body-store{
 	background: #cecece;
@@ -136,13 +136,74 @@ nav .btn-outline-secondary:hover{
  	width: 50%;
  	margin-bottom: 30px;
  }
- .envios i{
+ .envios .icono-envio{
  	color: #377FD9;
- 	font-size: 30px;
+ 	font-size: 40px;
  	margin-bottom: 20px;
  }
+ .envios .boton-contacto{
+ 	margin: auto;
+ 	margin-top: 35px;
+ 	margin-bottom: 35px;
+ }
+ /*------------- MAYORISTA ------------- */
+
+ .mayorista .texto-mayorista{
+ 	margin-bottom: 35px;
+ }
+ .mayorista .card{
+ 	margin-bottom: 35px;
+ 	text-align: center;
+ 	background: none;
+ }
+ .mayorista .card .card-title{
+ 	font-weight: bold;
+ 	margin-bottom: 15px;
+ }
+ .mayorista .card .card-subtitle{
+ 	margin-bottom: 15px;
+ }
+ .mayorista .card a{
+ 	color: #10BBD5;
+ 	font-weight: bold;
+ }
+ /*------------- FRANQUICIAS ------------- */
+
+.franquicias a{
+ 	color: #10BBD5;
+ 	font-weight: bold; 
+}
+.franquicias .carousel-franquicias{
+ 	margin-left: 40px;
+}
+.franquicias .carousel{
+ 	width: 75%;
+ 	margin: auto;
+ 	margin-bottom: 35px;
+}
+.franquicias .contacto{
+	margin-bottom: 35px;
+}
+/*------------- PUBLICITARIOS ------------- */
+.publicitarios a{
+	color: #10BBD5;
+ 	font-weight: bold;
+}
+.publicitarios .contacto{
+	margin-bottom: 35px;
+}
 
  /*------------- BODY ------------- */
+
+ .titulo-pagina{
+ 	margin-top: 35px;
+ 	text-align: center;
+ 	margin-bottom: 35px;
+ }
+ .subtitulo-pagina{
+ 	font-weight: bold;
+ 	margin-bottom: 20px;
+ }
 
 .container-main-body .body-store .banner{
 	margin-top: 15px;
@@ -248,7 +309,7 @@ footer{
 }
 footer .contacto{
 	color: #A69CA7;
-	
+
 }
 footer .contacto a{
 	color: #c2c2c2;
@@ -270,7 +331,7 @@ footer .contacto .columnas{
 	margin-bottom: 60px;
 }
 footer .contacto .locales{
-	
+
 }
 footer .contacto .icono{
 	font-size: 60px;
@@ -331,6 +392,11 @@ footer .legales p{
 .faq {
 	margin-top: 40px;
 	margin-bottom: 60px;
+	text-align: center;
+}
+.faq .titulo-faq{
+	font-weight: bold;
+	color: #06879b
 }
 
 /*------------ USER ------------*/

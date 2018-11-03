@@ -54,7 +54,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -62,7 +62,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -70,7 +70,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -78,7 +78,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -86,7 +86,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -94,7 +94,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -102,7 +102,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -110,7 +110,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -118,7 +118,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -126,7 +126,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -134,7 +134,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -142,7 +142,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 					</div>
@@ -157,7 +157,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -165,7 +165,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -173,7 +173,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -181,7 +181,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -189,7 +189,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -197,7 +197,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -205,7 +205,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -213,7 +213,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -221,7 +221,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -229,7 +229,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-4 col-lg-3 producto p-3">
@@ -237,7 +237,7 @@ require_once 'partials/header.php';
 							<div class="product-body">
 								<h5 class="product-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="product-text">$47</p>
-								<a href="#" class="btn btn-primary">Comprar</a>
+								<a href="#" class="btn btn-info">Comprar</a>
 							</div>
 						</div>
 
@@ -279,7 +279,7 @@ require_once 'partials/header.php';
 								<input type="text" placeholder="Email" class="form-control">
 							</div>
 							<div class="col-12">
-								<button class="btn btn-primary btn-block">Suscribirse</button>
+								<button class="btn btn-info btn-block">Suscribirse</button>
 							</div>
 						</div>
 

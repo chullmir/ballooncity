@@ -6,14 +6,15 @@ require_once 'partials/head.php';
 require_once 'partials/header.php';
  ?>
  <body>
- 	<div class="container">
+ 	<div class="container franquicias">
  		<div class="row">
  			<div class="col-12">
- 				<h3>La Empresa</h3>
- 				<h5>Balloon City es una empresa Argentina altamente innovadora.</h5>
+ 				<h3 class="titulo-pagina">La Empresa</h3>
+ 				<h5 class="subtitulo-pagina">Balloon City es una empresa Argentina altamente innovadora.</h5>
  				<p>Creada en 1989 es líder en Latino-América en el negocio de los globos. Tenemos presencia en más de 30 centros comerciales en todo el país, asegurando la mejor selección de productos, reposición automática, precios competitivos y alta rentabilidad en un ambiente profesional. Brindamos un entrenamiento que hará que la persona más inexperta se convierta en un gran profesional.</p>
  			</div>
  			<div class="col-12">
+
  				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
  					<ol class="carousel-indicators">
  						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -48,6 +49,7 @@ require_once 'partials/header.php';
  						<span class="sr-only">Next</span>
  					</a>
  				</div>
+ 				
  				<h4>Concepto de Negocio</h4>
  				<p>
  					Ofrecemos una experiencia impactante para el consumidor, con ventajas muy marcadas, calidad y precios inmejorables sobre productos novedosos y de gran impacto visual.
@@ -63,7 +65,7 @@ require_once 'partials/header.php';
  				<h4>Soporte Comercial</h4>
  				<p>Al momento de contratar una de nuestras franquicias, accedes a nuestro asesoramiento en la definición del local con respecto a la zona y sus características. Adicionalmente contamos con un equipo de personas especializadas que dan seguimiento diario al buen desempeño de nuestros locales, asistiendo y capacitando en busca de una mejora continua.</p>
  			</div>
- 			<div class="col-12">
+ 			<div class="col-12 contacto">
  				<a href="contacto.php">¿Tienes alguna pregunta sobre nuestras Franquicias?</a>
  			</div>
  		</div>

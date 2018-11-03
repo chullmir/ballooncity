@@ -23,17 +23,17 @@
 			</div>
 			<div class="col-12 d-flex justify-content-center iconos-redes">
 				<div class="img-redes">
-					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.facebook.com/ballooncityar/"><i class="fab fa-facebook"></i></a>
 				</div>
 				<div class="img-redes">
-					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.instagram.com/ballooncityar/"><i class="fab fa-instagram"></i></a>
 				</div>
 				<div class="img-redes">
-					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="https://twitter.com/ballooncityar"><i class="fab fa-twitter"></i></a>
 				</div>
-				<div class="img-redes">
+				<!-- <div class="img-redes">
 					<a href="#"><i class="fab fa-youtube"></i></a>
-				</div>
+				</div> -->
 
 			</div>
 		</div>
