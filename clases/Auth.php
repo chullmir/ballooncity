@@ -3,7 +3,7 @@
 	{
 		public function __construct()
 		{
-			session_start();
+			// session_start();
 			if( isset($_COOKIE['rememberUser']) && !$this->isLoged() ) {
 				$this->login($_COOKIE['rememberUser']);
 			}

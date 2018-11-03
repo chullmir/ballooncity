@@ -10,7 +10,7 @@
 						<a href="contacto.php"><i class="fas fa-envelope"></i></a>
 					</div>
 					<div class="ml-auto menu">
-						<?php if ($auth->isLogged()): ?>
+						<?php if (isset($_SESSION['email'])): ?>
 							<div class="no-sign">
 								<a href="profile.php"><i class="fas fa-user-circle"></i>
 								Mi Perfil</a>

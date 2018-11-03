@@ -1,2 +1,5 @@
 <?php
-session_destroy(); ?>
+require 'autoload.php';
+session_destroy();
+header('Location:index.php')
+ ?>

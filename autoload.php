@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'config.php';
 // Clases
 require_once 'clases/RegisterForm.php';

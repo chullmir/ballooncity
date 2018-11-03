@@ -54,7 +54,7 @@ require_once 'partials/header.php';
  				value="">
  				<div class="aclaracion">
  					<i class="fas fa-info-circle"></i>
- 					<small>La contraseña debe tener 8 caracteres como mínimo.</small>
+ 					<small>La contraseña debe tener 3 caracteres como mínimo.</small>
  				</div>
  				<input
  				type="password"

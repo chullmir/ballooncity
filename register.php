@@ -2,16 +2,14 @@
 require_once 'autoload.php';
 $FormData = new RegisterForm($_POST);
 $usuarioDuplicado = false;
-$dsn = 'mysql:host=localhost;dbname=ballooncity';
-$dbuser = 'root';
-$dbpass = '';
+
 
 if ($_POST) {
 	if ($FormData->isValid()) {
 		// Sin errores en el formulario
 		$name = $FormData->getName();
 		$email = $FormData->getEmail();
-		$password = $FormData->getPassword();
+		$password = hash('sha512',$FormData->getPassword());
 		try {
 			$conexion = new PDO($dsn,$dbuser,$dbpass);
 		} catch (PDOException $e) {
@@ -23,6 +21,7 @@ if ($_POST) {
 		if (empty($resultados)) {
 			$statement = $conexion->prepare('INSERT INTO usuarios (id,name,email,password) VALUES (null, :name, :email, :password)');
 			$statement->execute([':name'=>$name,':email'=>$email,':password'=>$password]);
+			echo "Cuenta creada con éxito";
 			// header('Location:profile.php');
 		} else {
 			$usuarioDuplicado = true;
