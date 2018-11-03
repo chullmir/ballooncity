@@ -12,6 +12,8 @@ require_once 'partials/header.php';
 				<h3 class="titulo-pagina">Envíos a domicilio</h3>
 				<h5 class="subtitulo-pagina">Tenemos delivery para todos nuestros productos!</h5>
 				<p>Los globos de látex tienen una duración de entre 8-12 horas en el aire, los metalizados de 3-4 días</p>
+			</div>
+			<div class="imagen">
 				<img class="img-fluid" src="img/balloon-delivery.jpg" alt="">
 			</div>
 			<div class="col-12 col-md-6 col-envios">
@@ -25,9 +27,7 @@ require_once 'partials/header.php';
 				<p>Ofrecemos una asesoría completa para dar con el color apropiado para ese momento tan especial desde el inicio hasta el fin con el único objetivo de hacer de su sorpresa un momento inolvidable.</p>
 			</div>
 			<div class="col-12 boton-contacto">
-				<form action="contacto.php">
-					<button type="submit" class="btn btn-info">Consultar los precios</button>
-				</form>
+				<a href="contacto.php" class="btn btn-info">Consultar los precios</a>
 			</div>
 			<div class="col-12">
 				<p>El costo del envío tiene un recargo los días de semana entre las 19-10 hs y los sábados por la tarde, todo el domingo y feriados.</p>

@@ -127,23 +127,25 @@ nav .btn-outline-secondary:hover{
 
  /*------------- ENVIOS ------------- */
  .envios{
- 	margin-top: 35px;
- 	text-align: center;
+
  }
  .envios h5{
  	font-weight: bold;
  }
- .envios img{
+ .envios .imagen{
+ 	text-align: center;
+ }
+ .envios .imagen img{
  	width: 50%;
  	margin-bottom: 30px;
  }
  .envios .icono-envio{
- 	color: #377FD9;
+ 	color: #10BBD5;
  	font-size: 40px;
  	margin-bottom: 20px;
  }
  .envios .boton-contacto{
- 	margin: auto;
+ 	text-align: center;
  	margin-top: 35px;
  	margin-bottom: 35px;
  }
@@ -208,6 +210,10 @@ nav .btn-outline-secondary:hover{
 }
 .contacto .formulario{
 	text-align: center;
+}
+/*------------- EVENTOS ------------- */
+.eventos{
+	margin-bottom: 35px;
 }
 /*------------- BODY ------------- */
 
@@ -411,7 +417,6 @@ footer .legales p{
 .faq {
 	margin-top: 40px;
 	margin-bottom: 60px;
-	text-align: center;
 }
 .faq .titulo-faq{
 	font-weight: bold;
