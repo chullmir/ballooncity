@@ -1,6 +1,5 @@
 <?php
 require_once 'autoload.php';
-require_once 'clases/conexion.php';
 $pageTitle = 'Mi Perfil';
 require_once 'partials/head.php';
 require_once 'partials/header.php';

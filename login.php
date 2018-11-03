@@ -17,6 +17,8 @@ if ($_POST) {
     $resultados = $statement->fetchAll();
     if ($resultados != false) {
       $_SESSION['email'] = $email;
+      $_SESSION['name'] = $resultados[0]['name'];
+      // echo "Conexion exitosa";
       header('Location:profile.php');
     }
 
