@@ -441,8 +441,12 @@ footer .legales p{
 	border-bottom: solid white;
 	padding-bottom: 10px;
 }
-.producto .texto .opcional{
-	display: inline-block;
+.producto .texto .codigo{
+	font-size: 18px;
+}
+.producto .texto .precio{
+	font-weight: bold;
+	font-size: 35px;
 }
 
 /*------------ MEDIA QUERIES ------------*/
