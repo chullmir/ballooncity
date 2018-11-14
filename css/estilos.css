@@ -174,7 +174,7 @@ nav .btn-outline-secondary:hover{
 
 .franquicias a{
  	color: #10BBD5;
- 	font-weight: bold; 
+ 	font-weight: bold;
 }
 .franquicias .carousel-franquicias{
  	margin-left: 40px;
@@ -430,8 +430,23 @@ footer .legales p{
 	color: red;
 	margin: 10px 10px;
 }
-
-
+/*------------ PRODUCTO ------------*/
+.producto{
+	margin-top: 30px;
+	background: #f2f2f2;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+.producto .imagen .img{
+	width: 100%;
+}
+.producto .texto h2{
+	border-bottom: solid white;
+	padding-bottom: 10px;
+}
+.producto .texto .opcional{
+	display: inline-block;
+}
 
 /*------------ MEDIA QUERIES ------------*/
 
