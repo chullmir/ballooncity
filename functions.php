@@ -18,5 +18,12 @@ function obtener_productos($conexion,$cant){
   $sentencia->execute();
   return $sentencia->fetchAll();
 }
-
+function id_producto($id){
+  return (int)limpiarDatos($id);
+}
+function obtener_producto_por_codigo($conexion,$codigo){
+  $resultado = $conexion->query("SELECT * FROM productos_balloon WHERE codigo = $codigo LIMIT 1");
+  $resultado = $resultado->fetchAll();
+  return ($resultado) ? $resultado : false;
+}
  ?>

@@ -437,6 +437,13 @@ footer .legales p{
 	padding: 15px;
 	margin-bottom: 30px;
 }
+.producto .imagen{
+	text-align: center;
+
+}
+.producto .imagen .imagen_producto img{
+	width: 250px;
+}
 .producto .texto h2{
 	border-bottom: solid white;
 	padding-bottom: 10px;

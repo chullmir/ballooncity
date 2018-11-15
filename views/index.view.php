@@ -38,6 +38,8 @@
 
       <div class="best-selling">
         <h2>Best Selling</h2>
+        
+
         <hr>
         <div class="row">
 
@@ -46,7 +48,7 @@
             <div class="col-6 col-sm-4 col-lg-3 producto p-3">
               <img class="img-fluid" src="img/producto/producto.jpg" alt="product image cap">
               <div class="product-body">
-                <h5 class="product-title"><a href="producto.php"><?php echo $producto['nombre']; ?></a></h5>
+                <h5 class="product-title"><a href="producto.php?id=<?php echo $producto['codigo']; ?>"><?php echo $producto['nombre']; ?></a></h5>
                 <p class="product-text">$ <?php echo $producto['precio']; ?></p>
                 <a href="#" class="btn btn-info">Comprar</a>
               </div>
