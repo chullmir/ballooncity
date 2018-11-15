@@ -56,8 +56,8 @@
 					<a class="nav-link <?php echo($navActive == 'nav-evento' ? 'active' : '' ) ?>" href="eventos.php">Eventos</a>
 				</li>
 			</ul>
-			<form class="form-inline my-2 my-lg-0 ">
-				<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+			<form class="form-inline my-2 my-lg-0 " action="buscar.php">
+				<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar" name="busqueda">
 
 				<button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
 
