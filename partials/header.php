@@ -4,15 +4,15 @@
 			<div class="col">
 				<div class="contenedor d-flex align-items-start">
 					<div class="menu">
-						<a href="index.php"><i class="fas fa-home"></i></a>
+						<a href="<?php echo(RUTA); ?>/"><i class="fas fa-home"></i></a>
 					</div>
 					<div class="menu">
-						<a href="contacto.php"><i class="fas fa-envelope"></i></a>
+						<a href="<?= RUTA ?>/contacto.php"><i class="fas fa-envelope"></i></a>
 					</div>
 					<div class="ml-auto menu">
 						<?php if (isset($_SESSION['email'])): ?>
 							<div class="no-sign">
-								<a href="profile.php"><i class="fas fa-user-circle"></i>
+								<a href="<?= RUTA ?>/profile.php"><i class="fas fa-user-circle"></i>
 								Mi Perfil</a>
 							</div>
 						<?php else: ?>
@@ -28,8 +28,8 @@
 		</div>
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-dark">
-		<a class="navbar-brand" href="index.php">
-			<img src="img/logo.png" width="70px" alt="">
+		<a class="navbar-brand" href="<?= RUTA ?>/">
+			<img src="<?= RUTA ?>/img/logo.png" width="70px" alt="">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -38,22 +38,22 @@
 			<ul class="navbar-nav mr-auto">
 
 				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-envios' ? 'active' : '' ) ?>" href="envios.php">Envíos</a>
+					<a class="nav-link <?php echo($navActive == 'nav-envios' ? 'active' : '' ) ?>" href="<?= RUTA ?>/envios.php">Envíos</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-mayorista' ? 'active' : '' ) ?>" href="mayorista.php">Mayorista</a>
+					<a class="nav-link <?php echo($navActive == 'nav-mayorista' ? 'active' : '' ) ?>" href="<?= RUTA ?>/mayorista.php">Mayorista</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-franquicia' ? 'active' : '' ) ?>" href="franquicias.php">Franquicias</a>
+					<a class="nav-link <?php echo($navActive == 'nav-franquicia' ? 'active' : '' ) ?>" href="<?= RUTA ?>/franquicias.php">Franquicias</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-faq' ? 'active' : '') ?>" href="faq.php">FAQ</a>
+					<a class="nav-link <?php echo($navActive == 'nav-faq' ? 'active' : '') ?>" href="<?= RUTA ?>/faq.php">FAQ</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-globos-publicitarios' ? 'active' : '' ) ?>" href="publicitarios.php">Globos Publicitarios</a>
+					<a class="nav-link <?php echo($navActive == 'nav-globos-publicitarios' ? 'active' : '' ) ?>" href="<?= RUTA ?>/publicitarios.php">Globos Publicitarios</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-evento' ? 'active' : '' ) ?>" href="eventos.php">Eventos</a>
+					<a class="nav-link <?php echo($navActive == 'nav-evento' ? 'active' : '' ) ?>" href="<?= RUTA ?>/eventos.php">Eventos</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0 " action="buscar.php">

@@ -7,13 +7,17 @@ require_once 'partials/header.php';
  ?>
  <body>
  	<div class="container mayorista">
- 		<div class="row">
- 			<div class="col-12">
- 				<h3 class="titulo-pagina">Venta Mayorista</h3>
- 				<p>No tenemos monto mínimo para comprar nuestros productos pero si superás cierto monto, podés acceder a una lista de precios por mayor, con un gran descuento comparado al precio minorista!</p>
+		<div class="row header">
+			<div class="col">
+				<h1 class="titulo-pagina">Venta Mayorista</h1>
+			</div>
+		</div>
+		<div class="row body">
+			<div class="col-12">
+				<p>No tenemos monto mínimo para comprar nuestros productos pero si superás cierto monto, podés acceder a una lista de precios por mayor, con un gran descuento comparado al precio minorista!</p>
  				<p>Tené en cuenta que para comprar por mayor tenés que tener número de CUIT.</p>
- 			</div>
- 			<div class="col-12 col-md-6">
+			</div>
+			<div class="col-12 col-md-6">
  				<div class="card">
  					<img class="card-img-top" src="img/locales/once-1.jpg" alt="Once Balloon City">
  					<div class="card-body">
@@ -85,11 +89,15 @@ require_once 'partials/header.php';
  					</div>
  				</div>
  			</div>
+
  			<div class="col-12">
  				<p>Todos nuestros locales de venta exclusiva de globos en Once y Martinez tienen los mismos precios, por lo que podés conocernos en la zona que te quede más cómoda. Podes elegir tus productos en nuestro catalogo online.</p>
  			</div>
- 		</div>
- 	</div>
+
+		</div>
+	</div>
+
+
  	<?php require_once 'partials/footer.php'; ?>
 
  </body>

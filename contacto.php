@@ -5,12 +5,15 @@ require_once 'partials/head.php';
 require_once 'partials/header.php';
  ?>
  <body>
+
  	<div class="container contacto">
- 		<div class="row">
- 			<div class="col-12">
- 				<h3 class="titulo-pagina">Contáctenos</h4>
- 			</div>
- 			<div class="col-12 col-md-6">
+		<div class="row header">
+			<div class="col-12">
+				<h1 class="titulo-pagina">Contáctenos</h1>
+			</div>
+		</div>
+		<div class="row body">
+			<div class="col-12 col-md-6">
  				<div class="nosotros">
  					<h5>Nosotros</h5>
  					<p>Estamos enfocados en maximizar el valor de la experiencia de tus celebraciones a través de la alegría y belleza que transmiten las decoraciones con globos. Contamos con un amplio catálogo de globos importados y un extenso conocimiento en decoraciones para hacer ese momento realmente único.</p>
@@ -37,7 +40,11 @@ require_once 'partials/header.php';
  					<button type="submit" class="btn btn-info">Enviar Mensaje</button>
  				</form>
  			</div>
- 		</div>
- 	</div>
+
+		</div>
+
+	</div>
+
+
  </body>
  <?php require_once 'partials/footer.php'; ?>

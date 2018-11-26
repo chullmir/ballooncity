@@ -1,8 +1,3 @@
-
-/**{
-	margin: 0;
-	padding: 0;
-}*/
 .row{
 	margin-right: 0;
 	margin-left: 0;
@@ -42,6 +37,7 @@ nav .navbar-collapse .navbar-nav .nav-item:hover{
 	background: #10BBD5;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	box-shadow: 10px 0px 8px #888888;
 }
 .container-venta a{
 	color: #fff;
@@ -55,8 +51,66 @@ nav .navbar-collapse .navbar-nav .nav-item:hover{
 	font-size: 15px;
 }
 
+/*-------- inicio INDEX -------- */
+.body-index{
+	/*background: #e2e2e2;*/
+}
+.body-index .listado-productos{
+	margin-top: 20px;
+	background: #f2f2f2;
+	/*background: violet;*/
+	padding: 5px;
+	margin-bottom: 30px;
+}
+.body-index .listado-productos .producto{
+	/*background: orange;*/
+	/*border: solid #000;*/
+	text-align: center;
+	padding: 10px;
+	/*border-radius: 5%;*/
+}
+.body-index .listado-productos .producto .card-producto{
+	/*background: yellow;*/
+	padding: 15px;
+	border: solid #c2c2c2;
+	border-radius: 5%;
+}
+.body-index .listado-productos .producto .card-producto .btn{
+	margin-bottom: 10px;
+}
+.body-index .listado-productos .producto .img-producto{
+	margin-bottom: 20px;
+}
+.aside{
+	background: red;
+}
 
 
+/*-------- fin INDEX -------- */
+
+
+/*-------- inicio TEMPLATE PAGINAS -------- */
+.container .header{
+ 	text-align: center;
+ 	margin-bottom: 10px;
+	background: #fff;
+	margin-bottom: 35px;
+	margin-top: 35px;
+	box-shadow: 5px 5px 5px #888888;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+}
+.body {
+	background: #fff;
+	box-shadow: 5px 5px 5px #888888;
+	margin-bottom: 20px;
+	padding: 35px;
+}
+
+
+
+/*-------- fin TEMPLATE PAGINAS -------- */
 
 
 .container-header{
@@ -125,30 +179,27 @@ nav .btn-outline-secondary:hover{
 	width: 100%;
 }
 
- /*------------- ENVIOS ------------- */
- .envios{
-
- }
- .envios h5{
- 	font-weight: bold;
- }
- .envios .imagen{
- 	text-align: center;
- }
- .envios .imagen img{
- 	width: 50%;
- 	margin-bottom: 30px;
- }
- .envios .icono-envio{
- 	color: #10BBD5;
- 	font-size: 40px;
- 	margin-bottom: 20px;
- }
- .envios .boton-contacto{
- 	text-align: center;
- 	margin-top: 35px;
- 	margin-bottom: 35px;
- }
+/*------------- ENVIOS ------------- */
+.envios .imagen{
+	text-align: center;
+}
+.envios .imagen img{
+	width: 50%;
+	margin-bottom: 30px;
+}
+.envios .body .cards-envios .iconos{
+	text-align: center;
+}
+.envios .icono-envio{
+	color: #10BBD5;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.envios .boton-contacto{
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
  /*------------- MAYORISTA ------------- */
 
  .mayorista .texto-mayorista{
@@ -171,7 +222,12 @@ nav .btn-outline-secondary:hover{
  	font-weight: bold;
  }
  /*------------- FRANQUICIAS ------------- */
-
+.franquicias .body{
+	background: #fff;
+	padding-top: 35px;
+	margin-bottom: 35px;
+	box-shadow: 5px 5px 5px #888888;
+}
 .franquicias a{
  	color: #10BBD5;
  	font-weight: bold;
@@ -217,19 +273,9 @@ nav .btn-outline-secondary:hover{
 }
 /*------------- BODY ------------- */
 
-.titulo-pagina{
- 	margin-top: 35px;
- 	text-align: center;
- 	margin-bottom: 35px;
-}
-.subtitulo-pagina{
- 	font-weight: bold;
- 	margin-bottom: 20px;
-}
 
-.container-main-body .body-store .banner{
-	margin-top: 15px;
-}
+
+
 .container-main-body .body-store .best-selling, .new-products{
 	background: #f2f2f2;
 	margin-top: 10px;
@@ -247,12 +293,12 @@ nav .btn-outline-secondary:hover{
 /*.container-main-body .body-store .best-selling .producto{
 	background: #f2f2f2;
 }*/
-.producto img{
+/*.producto img{
 	width: 90%;
-}
-.producto .product-body .product-title{
+}*/
+/*.producto .product-body .product-title{
 	margin-top: 10px;
-}
+}*/
 .container-main-body .body-store .categorias-store{
 	margin-top: 15px;
 }
@@ -327,6 +373,7 @@ nav .btn-outline-secondary:hover{
 	text-decoration: none;
 }
 footer{
+	margin-top: 100px;
 	background: #403042;
 }
 footer .contacto{
@@ -414,10 +461,7 @@ footer .legales p{
 
 /*------------ FAQ ------------*/
 
-.faq {
-	margin-top: 40px;
-	margin-bottom: 60px;
-}
+
 .faq .titulo-faq{
 	font-weight: bold;
 	color: #06879b
@@ -425,36 +469,70 @@ footer .legales p{
 
 /*------------ USER ------------*/
 
-.signjoin .error{
+.error{
 	font-weight: bold;
 	color: red;
 	margin: 10px 10px;
 }
-/*------------ PRODUCTO ------------*/
-.producto{
-	margin-top: 30px;
-	background: #f2f2f2;
-	padding: 15px;
-	margin-bottom: 30px;
+
+/*------------ PAGINA PRODUCTOS ------------*/
+
+.listado-productos .contenedor{
+	background: #fff;
 }
-.producto .imagen{
-	text-align: center;
+.listado-productos .contenedor .card-producto{
+	border: solid #e2e2e2;
+}
+.listado-productos .contenedor .card-producto .imagen img{
+	width: 100%;
 
 }
-.producto .imagen .imagen_producto img{
-	width: 250px;
+
+
+/*------------ PAGINACION ------------*/
+.paginacion {
+	margin-bottom: 30px;
 }
-.producto .texto h2{
-	border-bottom: solid white;
-	padding-bottom: 10px;
+
+.paginacion ul {
+	list-style: none;
+	text-align: center;
 }
-.producto .texto .codigo{
-	font-size: 18px;
+
+.paginacion ul li {
+	display: inline-block;
+	margin:0 5px;
+	color:#fff;
 }
-.producto .texto .precio{
-	font-weight: bold;
-	font-size: 35px;
+
+.paginacion ul li a {
+	display: block;
+	padding:10px 20px;
+	background: #595959;
+	color:#fff;
 }
+
+.paginacion ul li a:hover {
+	background: #10BBD5;
+	text-decoration: none;
+}
+
+.paginacion ul .active {
+	background: #10BBD5;
+	padding:10px 20px;
+}
+
+.paginacion ul .disabled{
+	background: #a8a8a8;
+	padding:10px 20px;
+	cursor: not-allowed;
+}
+
+.paginacion ul .disabled:hover {
+	background: #a8a8a8;
+}
+
+
 
 /*------------ MEDIA QUERIES ------------*/
 

@@ -9,18 +9,19 @@ if ($_POST) {
     $email = $LoginData->getEmail();
     $password = hash('sha512',$LoginData->getPassword());
     $conexion = conexion($db_config);
-    // try {
-    //   $conexion = new PDO($dsn,$dbuser,$dbpass);
-    // } catch (PDOException $e) {
-    //   echo "Hay errores de Base de Datos";
-    // }
     $statement = $conexion->prepare('SELECT * FROM usuarios WHERE email = :email and password = :password');
     $statement->execute([':email'=>$email,':password'=>$password]);
     $resultados = $statement->fetchAll();
     if ($resultados != false) {
+      
       $_SESSION['email'] = $email;
       $_SESSION['name'] = $resultados[0]['name'];
-      // echo "Conexion exitosa";
+      echo "<br>";
+      if ($resultados[0]['admin']) {
+        $_SESSION['admin']=$email;
+      } else {
+        $_SESSION['admin']='';
+      }
       header('Location:profile.php');
     }
 
