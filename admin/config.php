@@ -6,8 +6,9 @@
 		'dbpass' => ''
 	];
 	$site_config = [
+		'carpeta_productos' => 'img/productos/',
 		'carpeta_imagenes' => 'img/',
-		'productos_por_pagina' => 16
+		'productos_por_pagina' => 18
 	];
 	define("RUTA","http://localhost/dh/ballooncity");
 	$productos_por_pagina = 52;

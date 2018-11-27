@@ -12,37 +12,37 @@ if(!$conexion){
 }
 if ($_POST) {
 	if ($NuevoProducto->isValid()) {
-		$nombre = $NuevoProducto->getName();
 		$codigo = $NuevoProducto->getCodigo();
-		$precio = $NuevoProducto->getPrecio();
+		$nombre = $NuevoProducto->getName();
 		$stock = $NuevoProducto->getStock();
-		$categoria = $NuevoProducto->getCategoria();
+		$tipo = $NuevoProducto->getTipo();
+		$precio = $NuevoProducto->getPrecio();
+		// $categoria = $NuevoProducto->getCategoria();
 		$thumb = $NuevoProducto->getThumb();
 
 		// Direccion final del archivo incluyendo el nombre
 		# Importante recordar que este archivo se encuentra dentro de la carpeta admin, asi que
 		# tenemos que concatenar al inicio '../' para bajar a la raiz de nuestro proyecto.
-		$destino_archivo = '../' . $site_config['carpeta_imagenes'] . $_FILES['thumb']['name'];
+		$destino_archivo = '../' . $site_config['carpeta_productos'] . $_FILES['thumb']['name'];
+
 		// Subimos el archivo
 		move_uploaded_file($thumb, $destino_archivo);
 
 		$statement = $conexion->prepare(
-			'INSERT INTO productos_balloon (id,nombre,codigo,precio,stock,categoria,imagen)
-			VALUES (null,:nombre,:codigo,:precio,:stock,:categoria,:imagen)'
+			'INSERT INTO productos_balloon (id,codigo,nombre,stock,tipo,precio,thumb)
+			VALUES (null,:codigo,:nombre,:stock,:tipo,:precio,:thumb)'
 		);
 		$statement->execute([
-			':nombre'=>$nombre,
 			':codigo'=>$codigo,
-			':precio'=>$precio,
+			':nombre'=>$nombre,
 			':stock'=>$stock,
-			':categoria'=>$categoria,
-			':imagen'=>$_FILES['thumb']['name']
+			':tipo'=>$tipo,
+			':precio'=>$precio,
+			':thumb'=>$_FILES['thumb']['name']
+			// ':categoria'=>$categoria
 		]);
-
+		header('Location:../profile.php');
 	}
-	// echo "<pre>";
-	// var_dump($NuevoProducto);
-	// echo "</pre>";
 	
 	
 }

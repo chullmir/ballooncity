@@ -43,7 +43,7 @@
 	<div class="container">
 		<div class="row legales">
 			<div class="col-12 logo d-flex justify-content-center">
-				<img class="img-fluid" src="img/logo.png" alt="">
+				<img class="img-fluid" src="<?=RUTA?>/img/logo.png" alt="">
 			</div>
 			<div class="col-12">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ea eos dolorum ab laudantium, deleniti ullam quis! Corporis, facilis, exercitationem! Labore distinctio id blanditiis omnis error molestias commodi dolores earum.</p>

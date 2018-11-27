@@ -14,7 +14,6 @@ $producto = obtener_producto_por_codigo($conexion,$id_producto);
 if (!$producto) {
   header('Location:index.php');
 }
-
 require_once 'partials/head.php';
 require_once 'partials/header.php';
 require_once 'views/producto.view.php';

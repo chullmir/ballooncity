@@ -70,16 +70,22 @@ nav .navbar-collapse .navbar-nav .nav-item:hover{
 	/*border-radius: 5%;*/
 }
 .body-index .listado-productos .producto .card-producto{
-	/*background: yellow;*/
+	background: #fff;
 	padding: 15px;
-	border: solid #c2c2c2;
-	border-radius: 5%;
+	border: solid #c2c2c2 1px;
+	border-radius: 2%;
+}
+.body-index .listado-productos .producto .card-producto .product-title{
+	color: #000;
 }
 .body-index .listado-productos .producto .card-producto .btn{
 	margin-bottom: 10px;
 }
 .body-index .listado-productos .producto .img-producto{
 	margin-bottom: 20px;
+}
+.body-index .listado-productos .producto .img-producto img{
+	width: 100%;
 }
 .aside{
 	background: red;
@@ -107,11 +113,34 @@ nav .navbar-collapse .navbar-nav .nav-item:hover{
 	margin-bottom: 20px;
 	padding: 35px;
 }
-
-
-
 /*-------- fin TEMPLATE PAGINAS -------- */
 
+/*-------- inicio PRODUCT PAGE -------- */
+.product-page .body .imagen img{
+	width: 100%;
+}
+.product-page .body .codigo,
+.product-page .body .precio,
+.product-page .body .stock{
+	font-size: 32px;
+}
+/*-------- fin PRODUCT PAGE -------- */
+
+/*-------- inicio ADMINISTRADOR PRODUCTOS -------- */
+.administrador .body .producto .card-producto{
+	border: solid #c2c2c2 1px;
+	border-radius: 2%;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+.administrador .body .producto .card-producto .imagen img{
+	width: 100%;
+}
+.administrador .body .producto .card-producto .botones{
+	text-align: center;
+}
+
+/*-------- fin ADMINISTRADOR PRODUCTOS -------- */
 
 .container-header{
 	padding-left: 0px;

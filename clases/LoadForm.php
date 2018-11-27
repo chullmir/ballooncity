@@ -3,17 +3,19 @@ require_once 'FormClass.php';
 class LoadForm extends FormClass{
 	private $nombre;
 	private $codigo;
+	private $tipo;
 	private $precio;
 	private $stock;
-	private $categoria;
+	// private $categoria;
 	private $thumb;
 
 	function __construct($post,$files){
-		$this->nombre = limpiarDatos((isset($post['nombre']) ? $post['nombre'] : ''));
 		$this->codigo = limpiarDatos((isset($post['codigo']) ? $post['codigo'] : ''));
-		$this->precio = limpiarDatos((isset($post['precio']) ? $post['precio'] : ''));
+		$this->nombre = limpiarDatos((isset($post['nombre']) ? $post['nombre'] : ''));
 		$this->stock = limpiarDatos((isset($post['stock']) ? $post['stock'] : ''));
-		$this->categoria = limpiarDatos((isset($post['categoria']) ? $post['categoria'] : ''));
+		$this->tipo = limpiarDatos((isset($post['tipo']) ? $post['tipo'] : ''));
+		$this->precio = limpiarDatos((isset($post['precio']) ? $post['precio'] : ''));
+		// $this->categoria = limpiarDatos((isset($post['categoria']) ? $post['categoria'] : ''));
 		$this->thumb = limpiarDatos((isset($files['thumb']) ? $files['thumb']['tmp_name'] : ''));
 	}
 
@@ -23,6 +25,9 @@ class LoadForm extends FormClass{
 		}
 		if (empty($this->codigo)) {
 			$this->addError('codigo','Por favor escribir el código del producto');
+		}
+		if (empty($this->tipo)) {
+			$this->addError('tipo','Por favor escribir el tipo del producto');
 		}
 		if (empty($this->precio)) {
 			$this->addError('precio','Por favor escribir el precio del producto');
@@ -41,15 +46,18 @@ class LoadForm extends FormClass{
 	public function getCodigo(){
 		return $this->codigo;
 	}
+	public function getTipo(){
+		return $this->tipo;
+	}
 	public function getPrecio(){
 		return $this->precio;
 	}
 	public function getStock(){
 		return $this->stock;
 	}
-	public function getCategoria(){
-		return $this->categoria;
-	}
+	// public function getCategoria(){
+	// 	return $this->categoria;
+	// }
 	public function getThumb(){
 		return $this->thumb;
 	}

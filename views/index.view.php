@@ -33,12 +33,19 @@
 						<div class="col-6 col-lg-4 producto">
 							<div class="card-producto">
 								<div class="img-producto">
-									<a href="#"><img src="img/producto/producto.jpg" alt="" class="img-fluid"></a>
+									<a href="producto.php?id=<?php echo $producto['codigo'] ?>">
+										<?php if (file_exists('img/productos/'.$producto['thumb'])): ?>
+											<img src="img/productos/<?= $producto['thumb'] ?>" alt="">
+										<?php else: ?>
+											<img src="img/producto/producto.jpg" alt="" class="img-fluid">
+										<?php endif ?>
+										
+									</a>
 								</div>
-								<a href="#"><h5 class="product-title"><?php echo $producto['nombre']; ?></h5></a>
+								<a href="producto.php?id=<?php echo $producto['codigo'] ?>" class="product-title"><h5><?php echo $producto['nombre']; ?></h5></a>
 								<p class="product-price"><?php echo $producto['precio']; ?></p>
 								<a href="#" class="btn btn-info">Comprar</a>
-								<a href="#" class="btn btn-secondary">Ver</a>
+								<a href="producto.php?id=<?php echo $producto['codigo'] ?>" class="btn btn-secondary">Ver</a>
 							</div>
 						</div>
 						
@@ -53,9 +60,9 @@
 				
 			</div>
 			<?php
-			echo "<pre>";
-			var_dump($productos);
-			echo "</pre>";
+			// echo "<pre>";
+			// var_dump($productos);
+			// echo "</pre>";
 			?>
 		</div>
 		<div class="col-md-3 aside">

@@ -29,7 +29,7 @@ require_once 'partials/header.php';
 
 
 		</div>
-		<a href="logout.php">Cerrar Sesión</a>
+		<a href="logout.php" class="btn btn-danger">Cerrar Sesión</a>
 	</div>
 
 

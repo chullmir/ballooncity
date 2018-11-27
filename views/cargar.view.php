@@ -13,6 +13,17 @@ require_once '../partials/header.php';
 			<div class="col">
 				<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data" class="formulario" method="post">
 					<div class="form-group">
+						<label for="codigo">Código de Producto</label>
+						<input type="text" name="codigo" id="codigo" class="form-control <?= ($NuevoProducto->fieldHasError('codigo') ? 'is-invalid' : '') ?>" placeholder="Código" value="<?= $NuevoProducto->getCodigo() ?>">
+						<?php if ($NuevoProducto->fieldHasError('codigo')): ?>
+							<div class="error">
+								<p>
+									<?= $NuevoProducto->getFieldErrors('codigo') ?>
+								</p>
+							</div>
+						<?php endif; ?>
+					</div>
+					<div class="form-group">
 						<label for="nombre">Nombre del Producto</label>
 						<input type="text" name="nombre" id="nombre" class="form-control <?= ($NuevoProducto->fieldHasError('nombre') ? 'is-invalid' : '') ?>" placeholder="Nombre del Producto" value="<?= $NuevoProducto->getName() ?>">
 						<?php if ($NuevoProducto->fieldHasError('nombre')): ?>
@@ -24,30 +35,8 @@ require_once '../partials/header.php';
 						<?php endif; ?>
 					</div>
 					<div class="form-group">
-						<label for="codigo">Código de Producto</label>
-						<input type="text" name="codigo" id="codigo" class="form-control <?= ($NuevoProducto->fieldHasError('codigo') ? 'is-invalid' : '') ?>" placeholder="Código">
-						<?php if ($NuevoProducto->fieldHasError('codigo')): ?>
-							<div class="error">
-								<p>
-									<?= $NuevoProducto->getFieldErrors('codigo') ?>
-								</p>
-							</div>
-						<?php endif; ?>
-					</div>
-					<div class="form-group">
-						<label for="precio">Precio</label>
-						<input type="number" name="precio" id="precio" class="form-control <?= ($NuevoProducto->fieldHasError('precio') ? 'is-invalid' : '') ?>" placeholder="Precio">
-						<?php if ($NuevoProducto->fieldHasError('precio')): ?>
-							<div class="error">
-								<p>
-									<?= $NuevoProducto->getFieldErrors('precio') ?>
-								</p>
-							</div>
-						<?php endif; ?>
-					</div>
-					<div class="form-group">
 						<label for="stock">Stock</label>
-						<input type="number" name="stock" id="stock" class="form-control <?= ($NuevoProducto->fieldHasError('stock') ? 'is-invalid' : '') ?>" placeholder="Stock">
+						<input type="number" name="stock" id="stock" class="form-control <?= ($NuevoProducto->fieldHasError('stock') ? 'is-invalid' : '') ?>" placeholder="Stock" value="<?= $NuevoProducto->getStock() ?>">
 						<?php if ($NuevoProducto->fieldHasError('stock')): ?>
 							<div class="error">
 								<p>
@@ -57,9 +46,29 @@ require_once '../partials/header.php';
 						<?php endif; ?>
 					</div>
 					<div class="form-group">
-						<label for="categoria">Categoría</label>
-						<input type="text" name="categoria" id="categoria" class="form-control" placeholder="Categoría">
+						<label for="tipo">Tipo de Producto</label>
+						<input type="text" name="tipo" id="tipo" class="form-control <?= ($NuevoProducto->fieldHasError('tipo') ? 'is-invalid' : '') ?>" placeholder="Tipo" value="<?= $NuevoProducto->getTipo() ?>">
+						<?php if ($NuevoProducto->fieldHasError('tipo')): ?>
+							<div class="error">
+								<p>
+									<?= $NuevoProducto->getFieldErrors('tipo') ?>
+								</p>
+							</div>
+						<?php endif; ?>
 					</div>
+					<div class="form-group">
+						<label for="precio">Precio</label>
+						<input type="number" name="precio" id="precio" class="form-control <?= ($NuevoProducto->fieldHasError('precio') ? 'is-invalid' : '') ?>" placeholder="Precio" value="<?= $NuevoProducto->getPrecio() ?>">
+						<?php if ($NuevoProducto->fieldHasError('precio')): ?>
+							<div class="error">
+								<p>
+									<?= $NuevoProducto->getFieldErrors('precio') ?>
+								</p>
+							</div>
+						<?php endif; ?>
+					</div>
+					
+					
 					<div class="form-group">
 						<label for="thumb">Cargar Imagen:</label>
 						<input type="file" id="thumb" name="thumb">

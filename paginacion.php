@@ -1,12 +1,12 @@
 <section class="paginacion">
 	<ul>
 		<?php 
-		$numero_paginas = numero_paginas($productos_por_pagina,$conexion);
+		$numero_paginas = numero_paginas($site_config['productos_por_pagina'],$conexion);
 		?>
 		<?php if (pagina_actual()==1): ?>
 			<li class="disabled">&laquo;</li>
 		<?php else: ?>
-			<li><a href="productos.php?p=<?php echo(pagina_actual()-1) ?>">&laquo;</a></li>
+			<li><a href="administrar.php?p=<?php echo(pagina_actual()-1) ?>">&laquo;</a></li>
 		<?php endif ?>
 		<?php for ($i=1; $i <= $numero_paginas ; $i++): ?>
 			<?php if (pagina_actual()==$i): ?>
@@ -15,14 +15,14 @@
 				</li>
 			<?php else: ?>
 				<li>
-					<a href="productos.php?p=<?php echo $i ?>"><?php echo $i; ?></a>
+					<a href="administrar.php?p=<?php echo $i ?>"><?php echo $i; ?></a>
 				</li>
 			<?php endif ?>
 		<?php endfor ?>
 		<?php if (pagina_actual()==$numero_paginas): ?>
 			<li class="disabled">&raquo;</li>
 		<?php else: ?>
-			<li><a href="productos.php?p=<?php echo pagina_actual() + 1; ?>">&raquo;</a></li>
+			<li><a href="administrar.php?p=<?php echo pagina_actual() + 1; ?>">&raquo;</a></li>
 		<?php endif ?>
 	</ul>
 </section>
