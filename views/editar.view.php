@@ -1,4 +1,7 @@
 <?php
+require_once '../partials/head.php';
+require_once '../partials/header.php';
+
 // echo "<pre>";
 // var_dump($producto);
 // echo "</pre>";
@@ -18,6 +21,7 @@
 		<div class="row body">
 			<div class="col-12">
 				<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data" class="formulario" method="post">
+					<input type="hidden" name="id" value="<?php echo $producto['ID'] ?>">
 					<div class="form-group">
 						<label for="codigo">Código de Producto</label>
 						<input type="text" name="codigo" class="form-control" value="<?php echo $producto['codigo'] ?>">
@@ -39,7 +43,8 @@
 						<input type="number" name="precio" class="form-control" value="<?php echo $producto['precio'] ?>">
 					</div>
 					<div class="form-group">
-						<input type="file">
+						<input type="file" name="thumb">
+						<input type="hidden" name="thumb-guardada" value="<?php echo $producto['thumb'] ?>">
 					</div>
 					<div class="botones">
 						<input type="submit" class="btn btn-info" value="Guardar">
@@ -54,3 +59,4 @@
 
 
 </body>
+<?php require_once '../partials/footer.php'; ?>

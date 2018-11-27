@@ -15,11 +15,19 @@ $producto = $producto[0];
 if (!$producto) {
 	header('Location:index.php');
 }
-require_once '../partials/head.php';
-require_once '../partials/header.php';
+if ($_POST) {
+	$codigo = limpiarDatos($_POST['codigo']);
+	$nombre = limpiarDatos($_POST['nombre']);
+	$stock = limpiarDatos($_POST['stock']);
+	$tipo = limpiarDatos($_POST['tipo']);
+	$precio = limpiarDatos($_POST['precio']);
+
+}
+
+
 
 require_once '../views/editar.view.php';
-require_once '../partials/footer.php';
+
 
 
 
