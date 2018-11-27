@@ -32,7 +32,7 @@ require_once '../partials/header.php';
 						<p class="product-title"><?= $producto['nombre'] ?></p>
 						<p class="product-code"><?= $producto['codigo'] ?></p>
 						<div class="botones">
-							<a href="#" class="btn btn-info">Editar</a>
+							<a href="editar.php?id=<?php echo $producto['codigo'] ?>" class="btn btn-info">Editar</a>
 							<a href="#" class="btn btn-danger">Borrar</a>
 						</div>
 						
