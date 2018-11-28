@@ -88,11 +88,31 @@ nav .navbar-collapse .navbar-nav .nav-item:hover{
 	width: 100%;
 }
 .aside{
-	background: red;
+	/*background: red;*/
+}
+/*-------- fin INDEX -------- */
+
+/*-------- incio ASIDE -------- */
+.aside .contenedor{
+	background: #f2f2f2;
+	margin-top: 20px;
+	padding: 10px;
+}
+.aside .contenedor .categoria-aside{
+	/*border: solid 1px #000;*/
+	border-bottom: solid 1px #000;
+	/*margin-bottom: 10px;*/
+	padding: 5px;
+}
+.aside .contenedor .categoria-aside a{
+	color: #000;
+}
+.aside .contenedor .categoria-aside a:hover{
+	color: #10BBD5;
+	text-decoration: none;
 }
 
-
-/*-------- fin INDEX -------- */
+/*-------- fin ASIDE -------- */
 
 
 /*-------- inicio TEMPLATE PAGINAS -------- */
@@ -185,20 +205,6 @@ nav .btn-outline-secondary{
 }
 nav .btn-outline-secondary:hover{
 	background: #4ce7ff;
-}
-.aside{
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-.aside .list-categorias{
-
-}
-.aside .list-categorias a{
-	color: #10BBD5;
- 	font-weight: bold;
-}
-.aside .list-categorias a:hover{
-
 }
 .body-store{
 	background: #cecece;

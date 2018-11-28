@@ -66,7 +66,7 @@
 			?>
 		</div>
 		<div class="col-md-3 aside">
-			Aside
+			<?php require_once 'aside.php'; ?>
 		</div>
 	</div>
 </div>

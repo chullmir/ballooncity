@@ -39,7 +39,7 @@ if ($_POST) {
 		':coprecio'=>$precio,
 		':thumb'=>$thumb
 	]);
-	header('Location:'.RUTA.'/admin');
+	header('Location:'.RUTA.'/');
 
 } else {
 	$id_producto = id_producto($_GET['id']);
