@@ -28,6 +28,8 @@
         <p class="codigo">Código: <?php echo $producto[0]['codigo'] ?></p>
         <p class="precio">Precio: <?php echo $producto[0]['precio'] ?></p>
         <p class="stock">Stock: <?php echo $producto[0]['stock']; ?></p>
+        <p class="stock">Categorías: <?php echo $producto[0]['categorias']; ?></p>
+        <p class="stock">Marca: <?php echo $producto[0]['marca']; ?></p>
         <a href="#" class="btn btn-info">Comprar</a>
       </div>
 

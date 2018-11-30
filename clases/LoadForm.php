@@ -6,8 +6,9 @@ class LoadForm extends FormClass{
 	private $tipo;
 	private $precio;
 	private $stock;
-	// private $categoria;
+	private $categorias;
 	private $thumb;
+	private $marca;
 
 	function __construct($post,$files){
 		$this->codigo = limpiarDatos((isset($post['codigo']) ? $post['codigo'] : ''));
@@ -15,8 +16,9 @@ class LoadForm extends FormClass{
 		$this->stock = limpiarDatos((isset($post['stock']) ? $post['stock'] : ''));
 		$this->tipo = limpiarDatos((isset($post['tipo']) ? $post['tipo'] : ''));
 		$this->precio = limpiarDatos((isset($post['precio']) ? $post['precio'] : ''));
-		// $this->categoria = limpiarDatos((isset($post['categoria']) ? $post['categoria'] : ''));
+		$this->categorias = limpiarDatos((isset($post['categorias']) ? $post['categorias'] : ''));
 		$this->thumb = limpiarDatos((isset($files['thumb']) ? $files['thumb']['tmp_name'] : ''));
+		$this->marca = limpiarDatos((isset($post['marca']) ? $post['marca'] : ''));
 	}
 
 	public function isValid(){
@@ -35,8 +37,14 @@ class LoadForm extends FormClass{
 		if (empty($this->stock)) {
 			$this->addError('stock','Por favor escribir el stock del producto');
 		}
+		if (empty($this->categorias)) {
+			$this->addError('categorias','Por favor escribir alguna categoría del producto');
+		}
 		if (empty($this->thumb)) {
 			$this->addError('thumb','Por favor cargar la imagen del producto');
+		}
+		if (empty($this->marca)) {
+			$this->addError('marca','Por favor cargar la marca del producto');
 		}
 		return empty($this->errors);
 	}
@@ -55,11 +63,14 @@ class LoadForm extends FormClass{
 	public function getStock(){
 		return $this->stock;
 	}
-	// public function getCategoria(){
-	// 	return $this->categoria;
-	// }
+	public function getCategorias(){
+		return $this->categorias;
+	}
 	public function getThumb(){
 		return $this->thumb;
+	}
+	public function getMarca(){
+		return $this->marca;
 	}
 
 

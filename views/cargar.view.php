@@ -67,6 +67,17 @@ require_once '../partials/header.php';
 							</div>
 						<?php endif; ?>
 					</div>
+					<div class="form-group">
+						<label for="categorias">Categorias</label>
+						<input type="text" name="categorias" id="categorias" class="form-control <?= ($NuevoProducto->fieldHasError('categorias') ? 'is-invalid' : '') ?>" placeholder="Categorias" value="<?= $NuevoProducto->getCategorias() ?>">
+						<?php if ($NuevoProducto->fieldHasError('categorias')): ?>
+							<div class="error">
+								<p>
+									<?= $NuevoProducto->getFieldErrors('categorias') ?>
+								</p>
+							</div>
+						<?php endif; ?>
+					</div>
 					
 					
 					<div class="form-group">
@@ -80,7 +91,21 @@ require_once '../partials/header.php';
 							</div>
 						<?php endif; ?>
 					</div>
-					<input type="submit" value="Cargar" class="btn btn-info">
+
+					<div class="form-group">
+						<label for="marca">Marca</label>
+						<input type="text" name="marca" id="marca" class="form-control <?= ($NuevoProducto->fieldHasError('marca') ? 'is-invalid' : '') ?>" placeholder="Marca" value="<?= $NuevoProducto->getMarca() ?>">
+						<?php if ($NuevoProducto->fieldHasError('marca')): ?>
+							<div class="error">
+								<p>
+									<?= $NuevoProducto->getFieldErrors('marca') ?>
+								</p>
+							</div>
+						<?php endif; ?>
+					</div>
+
+					<input type="submit" value="Cargar" class="btn btn-info btn-block">
+					<a href="../profile.php" class="btn btn-danger btn-block">Volver</a>
 				</form>
 
 			</div>

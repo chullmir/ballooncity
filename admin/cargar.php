@@ -17,8 +17,9 @@ if ($_POST) {
 		$stock = $NuevoProducto->getStock();
 		$tipo = $NuevoProducto->getTipo();
 		$precio = $NuevoProducto->getPrecio();
-		// $categoria = $NuevoProducto->getCategoria();
+		$categorias = $NuevoProducto->getCategorias();
 		$thumb = $NuevoProducto->getThumb();
+		$marca = $NuevoProducto->getMarca();
 
 		// Direccion final del archivo incluyendo el nombre
 		# Importante recordar que este archivo se encuentra dentro de la carpeta admin, asi que
@@ -29,8 +30,8 @@ if ($_POST) {
 		move_uploaded_file($thumb, $destino_archivo);
 
 		$statement = $conexion->prepare(
-			'INSERT INTO productos_balloon (id,codigo,nombre,stock,tipo,precio,thumb)
-			VALUES (null,:codigo,:nombre,:stock,:tipo,:precio,:thumb)'
+			'INSERT INTO productos_balloon (ID,codigo,nombre,stock,tipo,precio,thumb,categorias,marca)
+			VALUES (null,:codigo,:nombre,:stock,:tipo,:precio,:thumb,:categorias,:marca)'
 		);
 		$statement->execute([
 			':codigo'=>$codigo,
@@ -38,8 +39,9 @@ if ($_POST) {
 			':stock'=>$stock,
 			':tipo'=>$tipo,
 			':precio'=>$precio,
-			':thumb'=>$_FILES['thumb']['name']
-			// ':categoria'=>$categoria
+			':thumb'=>$_FILES['thumb']['name'],
+			':categorias'=>$categorias,
+			':marca'=>$marca
 		]);
 		header('Location:../profile.php');
 	}

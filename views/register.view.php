@@ -93,7 +93,7 @@ require_once 'partials/header.php';
  				<button type="submit" class="btn btn-info btn-block">Crear Cuenta</button>
  			</form>
  			<p>Ya estas registrado?</p>
- 			<a href="login.php">Iniciar Sesión</a>
+ 			<a href="login.php" class="btn btn-warning btn-block">Iniciar Sesión</a>
  		</div>
  	</div>
  </body>

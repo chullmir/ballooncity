@@ -4,10 +4,11 @@ $pageTitle = 'Editar Producto';
 require_once '../autoload.php';
 $conexion = conexion($db_config);
 if (!$conexion) {
-	header('Location:index.php');
+	echo "Error 1";
+	// header('Location:index.php');
 }
 if ($_POST) {
-	$id = $_POST['id'];
+	$id = limpiarDatos($_POST['id']);
 	$codigo = limpiarDatos($_POST['codigo']);
 	$nombre = limpiarDatos($_POST['nombre']);
 	$stock = limpiarDatos($_POST['stock']);
@@ -15,6 +16,8 @@ if ($_POST) {
 	$precio = limpiarDatos($_POST['precio']);
 	$thumb_guardada = $_POST['thumb-guardada'];
 	$thumb = $_FILES['thumb'];
+	$categorias = limpiarDatos($_POST['categorias']);
+	$marca = limpiarDatos($_POST['marca']);
 	# Comprobamos que el nombre del thumb no este vacio, si lo esta
 	# significa que el usuario no agrego una nueva thumb y entonces utilizamos la thumb anterior.
 	if (empty($thumb['name'])) {
@@ -29,27 +32,41 @@ if ($_POST) {
 		$thumb = $_FILES['thumb']['name'];
 	}
 	$statement = $conexion->prepare('
-		UPDATE productos_balloon SET codigo = :codigo, nombre = :nombre, stock = :stock, tipo = :tipo, precio = :precio, thumb = :thumb WHERE ID = :id 
+		UPDATE productos_balloon SET 
+		codigo = :codigo, 
+		nombre = :nombre, 
+		stock = :stock, 
+		tipo = :tipo, 
+		precio = :precio, 
+		thumb = :thumb, 
+		categorias = :categorias, 
+		marca = :marca  
+			WHERE ID = :id 
 		');
 	$statement->execute([
 		':codigo'=>$codigo,
 		':nombre'=>$nombre,
 		':stock'=>$stock,
 		':tipo'=>$tipo,
-		':coprecio'=>$precio,
-		':thumb'=>$thumb
+		':precio'=>$precio,
+		':thumb'=>$thumb,
+		':categorias'=>$categorias,
+		':marca'=>$marca,
+		':id'=>$id
 	]);
-	header('Location:'.RUTA.'/');
+	header('Location:'.RUTA.'/admin/administrar.php');
 
 } else {
 	$id_producto = id_producto($_GET['id']);
 	if (empty($id_producto)) {
-		header('Location:index.php');
+		// header('Location:index.php');
+		echo "Error 2";
 	}
 	$producto = obtener_producto_por_codigo($conexion,$id_producto);
 	$producto = $producto[0];
 	if (!$producto) {
-		header('Location:index.php');
+		// header('Location:index.php');
+		echo "Error 3";
 	}
 
 

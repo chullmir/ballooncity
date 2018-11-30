@@ -36,27 +36,42 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-
 				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-envios' ? 'active' : '' ) ?>" href="<?= RUTA ?>/envios.php">Envíos</a>
+					<a class="nav-link <?php echo($navActive == 'nav-productos' ? 'active' : '' ) ?>" href="<?= RUTA ?>/catalogo.php">Productos</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link <?php echo($navActive == 'nav-mayorista' ? 'active' : '' ) ?>" href="<?= RUTA ?>/mayorista.php">Mayorista</a>
 				</li>
 				<li class="nav-item">
+					<a class="nav-link <?php echo($navActive == 'nav-envios' ? 'active' : '' ) ?>" href="<?= RUTA ?>/envios.php">Envíos</a>
+				</li>
+				
+				<!-- <li class="nav-item">
 					<a class="nav-link <?php echo($navActive == 'nav-franquicia' ? 'active' : '' ) ?>" href="<?= RUTA ?>/franquicias.php">Franquicias</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link <?php echo($navActive == 'nav-faq' ? 'active' : '') ?>" href="<?= RUTA ?>/faq.php">FAQ</a>
-				</li>
+				
 				<li class="nav-item">
 					<a class="nav-link <?php echo($navActive == 'nav-globos-publicitarios' ? 'active' : '' ) ?>" href="<?= RUTA ?>/publicitarios.php">Globos Publicitarios</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link <?php echo($navActive == 'nav-evento' ? 'active' : '' ) ?>" href="<?= RUTA ?>/eventos.php">Eventos</a>
+				</li> -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a href="<?= RUTA ?>/franquicias.php" class="dropdown-item">Franquicias</a>
+						<div class="dropdown-divider"></div>
+						<a href="<?= RUTA ?>/eventos.php" class="dropdown-item">Eventos</a>
+						<a href="<?= RUTA ?>/publicitarios.php" class="dropdown-item">Globos Publicitarios</a>
+						
+						
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link <?php echo($navActive == 'nav-faq' ? 'active' : '') ?>" href="<?= RUTA ?>/faq.php">FAQ</a>
 				</li>
 			</ul>
-			<form class="form-inline my-2 my-lg-0 " action="buscar.php">
+			<form class="form-inline my-2 my-lg-0 " action="<?php echo RUTA ?>/buscar.php">
 				<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar" name="busqueda">
 
 				<button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>

@@ -37,15 +37,16 @@ require_once 'partials/header.php';
              <?= $LoginData->getFieldErrors('password') ?>
            </div>
          <?php endif ?>
-         <div class="form-check d-flex">
+         <!-- <div class="form-check d-flex">
            <label for="rememberUser">Mantenerme conectado</label>
            <input type="checkbox" name="rememberUser" id="rememberUser" class="form-check-input">
-         </div>
+         </div> -->
          <button type="submit" class="btn btn-info btn-block">Ingresar</button>
        </form>
      </div>
      <div class="col-12">
-       <h5><a href="register.php">Registrarse</a></h5>
+      <p>¿No tenés cuenta?</p>
+       <a href="register.php" class="btn btn-warning btn-block">Registrarse</a>
      </div>
 
    </div>

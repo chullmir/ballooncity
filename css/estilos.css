@@ -100,12 +100,11 @@ nav .navbar-collapse .navbar-nav .nav-item:hover{
 }
 .aside .contenedor .categoria-aside{
 	/*border: solid 1px #000;*/
-	border-bottom: solid 1px #000;
-	/*margin-bottom: 10px;*/
+	margin-bottom: 10px;
 	padding: 5px;
 }
 .aside .contenedor .categoria-aside a{
-	color: #000;
+	/*color: #000;*/
 }
 .aside .contenedor .categoria-aside a:hover{
 	color: #10BBD5;
@@ -147,15 +146,18 @@ nav .navbar-collapse .navbar-nav .nav-item:hover{
 /*-------- fin PRODUCT PAGE -------- */
 
 /*-------- inicio ADMINISTRADOR PRODUCTOS -------- */
+.busqueda .body .producto .card-producto,
 .administrador .body .producto .card-producto{
 	border: solid #c2c2c2 1px;
 	border-radius: 2%;
 	margin-bottom: 15px;
 	padding: 15px;
 }
+.busqueda .body .producto .card-producto .imagen img,
 .administrador .body .producto .card-producto .imagen img{
 	width: 100%;
 }
+.busqueda .body .producto .card-producto .botones,
 .administrador .body .producto .card-producto .botones{
 	text-align: center;
 }

@@ -5,8 +5,9 @@ require_once '../partials/header.php';
 // echo "<pre>";
 // var_dump($producto);
 // echo "</pre>";
-
-
+// echo "<pre>";
+// var_dump($_POST);
+// echo "</pre>";
 ?>
 
 <body>
@@ -20,6 +21,7 @@ require_once '../partials/header.php';
 		</div>
 		<div class="row body">
 			<div class="col-12">
+				<!-- <?php var_dump($producto) ?> -->
 				<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data" class="formulario" method="post">
 					<input type="hidden" name="id" value="<?php echo $producto['ID'] ?>">
 					<div class="form-group">
@@ -46,9 +48,18 @@ require_once '../partials/header.php';
 						<input type="file" name="thumb">
 						<input type="hidden" name="thumb-guardada" value="<?php echo $producto['thumb'] ?>">
 					</div>
+					<div class="form-group">
+						<label for="marca">Marca</label>
+						<input type="text" name="marca" class="form-control" value="<?php echo $producto['marca'] ?>">
+					</div>
+					<div class="form-group">
+						<label for="categorias">Categorias</label>
+						<input type="text" name="categorias" class="form-control" value="<?php echo $producto['categorias'] ?>">
+					</div>
+
 					<div class="botones">
 						<input type="submit" class="btn btn-info" value="Guardar">
-						<a href="#" class="btn btn-danger">Cancelar</a>
+						<a href="administrar.php" class="btn btn-danger">Cancelar</a>
 					</div>
 				</form>
 			</div>
